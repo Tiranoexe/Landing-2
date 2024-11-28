@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agave</title>
+  <link rel="stylesheet" href="styles/style-2.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Sarina&display=swap" rel="stylesheet">
+  <!-- fonts ends -->
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <!-- <input type="checkbox" name="" id="check"> -->
+      <div class="logo-container">
+        <h3 class="logo sarina-regular">Agave</h3>
+      </div>
+      <div class="empty">
+      </div>
+
+      <!-- <div class="nav-btn">
+        <div class="nav-links averia-serif-libre-bold">
+          <ul>
+            <li class="nav-link" style="--i: .85s">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="#">Stores</a>
+            </li>
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="#">Menu</a>
+            </li>
+
+          </ul>
+        </div>
+      </div> -->
+
+      <div class="logo-container-2">
+        <button class="btn-carrito">
+          <ion-icon name="cart-outline" class="carrito" size="large"></ion-icon>
+        </button>
+
+        <div class="cart-items-container averia-serif-libre-light">
+          <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="img/agave-4.png" alt="" />
+            <div class="content">
+              <h3>Cart item 01</h3>
+              <div class="price">$9.99/-</div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="img/agave.png" alt="" />
+            <div class="content">
+              <h3>Cart item 02</h3>
+              <div class="price">$9.99</div>
+            </div>
+          </div>
+          <div class="total-box">
+            <div class="total">Total: $18.98 </div>
+
+            <form id="frm1">
+              <label class="radio">
+                <input type="radio" name="delivery"/>
+                Delivery
+              </label>
+            
+              <label class="radio">
+                <input type="radio" name="pickup"/>
+                Pickup
+              </label>
+              
+              <label class="form-control" for="adress">Calle:</label>
+              <input type="text" id="adress" placeholder="Ingresar calle" required>
+
+              <label class="form-control" for="number">Numero:</label>
+              <input type="number" id="number" placeholder="Ingresar numero" required>
+
+              <label class="form-control" for="floor">Piso:</label>
+              <input type="number" id="floor" placeholder="Ingresar piso">
+
+              <label class="form-control" for="depto">Depto:</label>
+              <input type="text" id="depto" placeholder="Ingresar depto">
+
+              <label class="form-control" for="extra">Extra:</label>
+              <input type="text" id="extra" placeholder="Mas info">
+
+            </form>
+
+            <a href="#" class="btn-p">Pagar</a>
+
+          </div>
+          
+          
+
+        </div>
+      </div>
+
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-2">
+      <div class="socials averia-serif-libre-light">
+        <p>Follow <br class="hide-on-mobile"> us</p>
+        <ul class="redes">
+          <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram" size="large" class="icon"></ion-icon></a></li>
+          <li><a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook" size="large" class="icon"></ion-icon></a></li>
+          <li><a href="https://www.youtube.com" target="_blank"><ion-icon name="logo-youtube" size="large" class="icon"></ion-icon></a></li>
+        </ul>
+      </div>
+
+      <div class="img">
+        <img src="img/agave.png" class="img-slide active" id="image1" alt="">
+        <img src="img/agave-2.png" class="img-slide hidden" id="image2" alt="">
+        <img src="img/agave-3.png" class="img-slide hidden" id="image3" alt="">
+        <img src="img/agave-4.png" class="img-slide hidden" id="image4" alt="">
+        <img src="img/agave-5.png" class="img-slide hidden" id="image5" alt="">
+
+      </div>
+
+      <div class="content">
+        <div class="extra averia-serif-libre-light">True fruits</div>
+        <div class="title sarina-regular">Smoothie triple purple</div>
+        <div class="subtitle averia-serif-libre-light">More vibrant lifestyle starts with AGAVE</div>
+        <div class="description chivo-regular">Naturally flavored with blackberry, blueberry, raspberry, orange, banana and apple.</div>
+        <div>
+          <button class="cssbuttons-io-button averia-serif-libre-light">
+            Add to cart
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24"xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none">
+              </path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="slide-buttons"></div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+  <script src="script-ex.js"></script>
+</body>
+</html>
+
