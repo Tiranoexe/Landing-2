@@ -821,7 +821,7 @@ input[type="radio"]:focus {
   
   .socials{
     display: inline-block;
-    flex: 2;
+    flex: 4;
     align-self: center;
     text-align: center;
     padding-bottom: 5%;
