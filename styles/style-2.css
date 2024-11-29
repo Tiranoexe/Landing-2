@@ -738,7 +738,8 @@ input[type="radio"]:focus {
 
 @media (max-width: 768px){ /* tablet */
   html{
-    max-width: 768px ;
+    max-width: 768px;
+    scroll-behavior: smooth;
   }
 
   .btn-carrito{
@@ -821,7 +822,7 @@ input[type="radio"]:focus {
   
   .socials{
     display: inline-block;
-    flex: 4;
+    flex: 1;
     align-self: center;
     text-align: center;
     padding-bottom: 5%;
